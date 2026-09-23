@@ -1,3 +1,4 @@
+import { createBook, markAsRead, getBookInfo, countReadBooks } from "./library";
 // Задание 2.1
 let studentName: string = "Анна";
 let studentAge: number = 20;
@@ -71,3 +72,19 @@ function logVoid(msg: string): void {
 function returnUndefined(): undefined {
     return undefined;
 }
+
+//////////////////////////////////////////////
+
+// Задание 4.1
+const books = [
+    createBook("1984", "Джордж Оруэлл", 1949),
+    createBook("Мастер и Маргарита", "Михаил Булгаков", 1967),
+    createBook("Преступление и наказание", "Фёдор Достоевский", 1866),
+];
+
+books[0] = markAsRead(books[0]);
+books[2] = markAsRead(books[2]);
+
+console.log("\n--- Список книг ---");
+books.forEach(book => console.log(getBookInfo(book)));
+console.log(`Прочитано книг: ${countReadBooks(books)}`);
