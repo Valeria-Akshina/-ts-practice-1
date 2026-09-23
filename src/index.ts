@@ -62,3 +62,12 @@ console.log(describeUser("Иван", 25));
 // formatPrice("100");
 // clamp(5, 0);
 // logMessage(123);
+
+// Задание 3.3
+function logVoid(msg: string): void {
+    console.log(msg);
+}
+
+function returnUndefined(): undefined {
+    return undefined;
+}
