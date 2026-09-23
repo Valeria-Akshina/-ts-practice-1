@@ -21,10 +21,6 @@ let isRead: boolean = false;
 isRead = true;
 
 // Задание 2.4
-// let userName: string = null; 
-
 let userName1: string | null = null;
 let userName2: string = "";
-
-
 
